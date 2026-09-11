@@ -10,14 +10,14 @@ pipeline a outra base construtiva, revise cada uma delas.
 
 ## As duas amostras (n=19 e n=39)
 
-O projeto trabalha com **duas amostras distintas, por desenho** — não é
+O projeto trabalha com **duas amostras distintas, por desenho** — não é uma
 inconsistência. A escolha entre elas depende da unidade de análise:
 
 - **n=19 — moradias medidas integralmente.** Usada nas **análises por
   edificação** (bloco "por tipo construtivo" do Passo 3). Somar os pavimentos
   para obter o total de uma casa só faz sentido quando a edificação inteira foi
-  levantada; por isso apenas as 19 moradias completas entram aqui.
-- **n=39 — todos os pavimentos visitados.** Usada nas **análises por nível de
+  levantada po escaneamento e modelagem; por isso apenas as 19 moradias completas entram aqui.
+- **n=39 — total de moradias visitadas.** Usada nas **análises por nível de
   pavimento**. Inclui pavimentos de edificações que não foram medidas
   integralmente: como a unidade de análise é o pavimento, cada pavimento medido é
   uma observação válida, mesmo isolado.
@@ -35,9 +35,9 @@ emissão** — separada da variabilidade amostral entre edificações/pavimentos
 
 ## Intervalos de confiança (bootstrap)
 
-Onde há estatística sobre a amostra, o IC é estimado por **bootstrap percentil
+Onde há estatística sobre a amostra, o intervalo de confiança (IC) é estimado por **bootstrap percentil
 95%** (2000 reamostragens). Amostras com uma única observação (n=1) não recebem
-IC — são marcadas com `*` nas figuras. Este IC captura a variabilidade entre
+IC e são marcadas com `*` nas figuras. Este IC captura a variabilidade entre
 unidades amostrais (casas ou pavimentos), e **não** a incerteza dos fatores de
 emissão.
 
@@ -73,7 +73,7 @@ cobre todos os insumos do modelo.
 
 ## Ajuste de pavimento — *shift down* (Passo 1)
 
-Alguns materiais estruturais são modelados no BIM um pavimento acima do que
+Alguns materiais estruturais de cobertura são modelados no BIM um pavimento acima do que
 representam fisicamente. Para edificações com mais de um pavimento, os materiais
 que casam com os padrões `ESTRUTURA CONCRETO VIGAS`, `TERÇA MADEIRA` e
 `TELHA FIBROCIMENTO` têm o pavimento **reduzido em um nível**
@@ -91,7 +91,9 @@ sempre multiplicadas pela área de projeção (footprint):
 - **≥ 4 pavimentos:** + (nº pav − 3) × índice do "≥ Pavimento 3" × área.
 
 Do 4º pavimento em diante, todos os níveis extras usam o mesmo índice de
-referência ("≥ Pavimento 3"). Edificações sem número de pavimentos válido são
+referência ("≥ Pavimento 3"), mas isso pode ser revisto de acordo com
+o nível de verticalizarão das edificações representado na amostra. 
+Edificações sem número de pavimentos válido são
 excluídas.
 
 ## Cenários de referência (Passo 3 → Passo 4)
