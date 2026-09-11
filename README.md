@@ -260,13 +260,6 @@ dívida técnica conhecida e orientar quem for evoluir o repositório.
       é calculada condicionalmente mas sempre resulta em `1000`, e o valor fixo
       `divisor=1000` é o que de fato é usado — a linha condicional é código morto.
 
-### Verificação de dados
-
-- [ ] **Conferir a amostra.** Alguns rodapés de figuras citam "n=39 moradias",
-      enquanto `config_tipos` mapeia 19 casas em tipologias por causa de escolhas metodológicas de análise da amostra São Remo. Esclarecer a
-      diferença entre amostra total e amostra tipificada (e corrigir os rótulos
-      se for o caso), orientando melhor as escolhas em novas favelas.
-
 ---
 
 ## Licença e citação
