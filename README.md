@@ -97,8 +97,7 @@ more-co2-bim/
 │
 └── docs/
     ├── fluxo_pipeline.md
-    ├── premissas_metodologicas.md
-    └── dicionario_dados.md
+    └── premissas_metodologicas.md
 ```
 
 Os arquivos de dados brutos e o shapefile **não são versionados** (ver
