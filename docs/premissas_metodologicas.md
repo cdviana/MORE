@@ -8,9 +8,19 @@ pipeline a outra base construtiva, revise cada uma delas.
 > **manual MORE**, que é a fonte primária. Este documento registra como cada
 > premissa é aplicada no código e onde ajustá-la.
 
+## Decisão de encadeamento
+
+A versão inicial dos códigos considera apenas o fluxo de trabalho estabelecido para a amostra
+da São Remo, e portanto possui registrado as premissas dessa comunidade específica. 
+Diante da variabilidade de casos amostrados, o ciclo de análise encerrou sugerindo a manutenção
+de um fluxo semi automatizado, que exige verificação e validação manual a cada nova moradia adicionada à base.
+Esse resultado condicionou a entrega do fluxo em notebooks independentes e segmentados, favorecendo a
+rastreabilidade de erros e inconsistências. Espera-se que com o aumento da base de casas modeladas, algumas etapas possam
+ser integradas e automatizadas completamente futuramente, mitigando possíveis erros humanos no processo.
+
 ## As duas amostras (n=19 e n=39)
 
-O projeto trabalha com **duas amostras distintas, por desenho** — não é uma
+O projeto trabalhou com **duas amostras distintas, por desenho** — não é uma
 inconsistência. A escolha entre elas depende da unidade de análise:
 
 - **n=19 — moradias medidas integralmente.** Usada nas **análises por
