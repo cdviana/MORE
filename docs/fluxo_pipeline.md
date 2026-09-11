@@ -40,7 +40,7 @@ BIM ─► casas_materiais.xlsx
    estoque total por cenário (mín / central / máx)
 ```
 
-## A dependência não óbvia: Passo 3 → Passo 4
+## A dependência Passo 3 → Passo 4
 
 A numeração sugere que os gráficos (Passo 3) e o estoque (Passo 4) são etapas
 independentes. **Não são.** O Passo 4 não lê o `consolidado_geral.xlsx`; ele
@@ -62,7 +62,7 @@ seção do Passo 3 antes de iniciar o Passo 4.**
 
 ## Efeitos colaterais em arquivos de entrada
 
-Dois passos modificam arquivos, não apenas leem — atenção ao versionar ou
+Dois passos modificam arquivos, atenção ao versionar ou
 reexecutar:
 
 - **Passo 1 altera o `dicionario_insumos.xlsx`.** Materiais sem correspondência
